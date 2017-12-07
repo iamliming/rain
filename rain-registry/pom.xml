@@ -9,7 +9,11 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>common</artifactId>
+  <artifactId>rain-registry</artifactId>
+  <packaging>pom</packaging>
+  <modules>
+    <module>rain-registry-api</module>
+  </modules>
 
 
 </project>

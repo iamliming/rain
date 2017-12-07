@@ -79,4 +79,8 @@ public class URL
         return i;
     }
 
+//    public String getParameter(String key)
+//    {
+//        return parameters;
+//    }
 }
