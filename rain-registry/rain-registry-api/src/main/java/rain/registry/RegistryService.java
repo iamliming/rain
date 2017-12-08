@@ -1,7 +1,5 @@
 package rain.registry;
 
-import java.util.List;
-
 import rain.common.URL;
 
 /**
@@ -14,15 +12,15 @@ import rain.common.URL;
  */
 public interface RegistryService
 {
-    void registry(URL url, NotifyListener listener);
+    /**
+     * 注册服务，server client注册
+     * rain://192.168.1.102:1055/RainService?version=1.0.0&application=sing
+     * @param url
+     */
+    void registry(URL url/*, NotifyListener listener*/);
 
-    void unRegistry(URL url, NotifyListener listener);
-
-    void subscriber(URL url, NotifyListener listener);
-
-    void unSubscriber(URL url, NotifyListener listener);
+    void unRegistry(URL url/*, NotifyListener listener*/);
 
     boolean abviable(URL url);
 
-    List<URL> lookup();
 }
